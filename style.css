@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 850px;
+    width: 100%;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.4em;
+    font-weight: 700;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 8px;
+}
+
+header .subtitle {
+    color: #a8d8ea;
+    font-size: 1.15em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-bottom: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #0078d4;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+    color: #0078d4;
+    margin-bottom: 16px;
+    font-size: 1.35em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8f4fd;
+}
+
+.card p {
+    color: #444;
+    font-size: 1.02em;
+    line-height: 1.9;
+    margin-bottom: 6px;
+}
+
+.card strong {
+    color: #0078d4;
+}
+
+/* Developer Card Table */
+.developer-card {
+    border-left-color: #00b4d8;
+}
+
+.developer-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.developer-card table td {
+    padding: 10px 12px;
+    font-size: 1.05em;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.developer-card table tr:last-child td {
+    border-bottom: none;
+}
+
+.developer-card table td:first-child {
+    width: 200px;
+    color: #0078d4;
+}
+
+/* Status Card */
+.status-card {
+    border-left-color: #28a745;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.badge.live {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Tech Card */
+.tech-card {
+    border-left-color: #6f42c1;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.tag {
+    background: linear-gradient(135deg, #0078d4, #00bcf2);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: 500;
+    box-shadow: 0 3px 8px rgba(0, 120, 212, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.tag:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 28px;
+    padding: 15px;
+    color: #a8d8ea;
+    font-size: 0.92em;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .card {
+        padding: 20px 18px;
+    }
+
+    .developer-card table td:first-child {
+        width: 140px;
+    }
+}
